@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- DESIGN COMPONETS -->
@@ -27,9 +35,24 @@
     <!-- NAV BAR -->
 
     <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="callout cell text-center">NAVBAR</div>
+      <div class="grid-x align-justify align-middle margin-bottom-3">
+        <div class="logo">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div>
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <button class="padding-2">Log in</button>
+          <button class="button margin-0">Sign up</button>
+        </div>
       </div>
+
       <!-- HERO SECTION -->
       <section
         class="grid-x align-middle hero overflow-visible grid-margin-x large-text-left text-center"
@@ -40,7 +63,12 @@
             Outcome-centered products that reduce churn, optimize pricing, and
             grow your subscription business end-to-end.
           </p>
-          <a href="" class="button secondary">Get Started</a>
+          <div class="grid-x grid-margin-x">
+            <a href="" class="button secondary display-block">Get Started</a>
+            <div class="callout margin-left-2 rounded">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
         </div>
         <div class="large-6 cell hero-img order-1">
           <img src="img/Hero 3D.png" alt="" />
