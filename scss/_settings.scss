@@ -67,7 +67,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1100);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #ff7143,
@@ -76,7 +76,6 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$primary-dark: #9f3919;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #696871;
@@ -153,22 +152,24 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     "h1": (
-      "font-size": 36,
+      "font-size": 52,
       "line-height": 96%,
       "letter-spacing": -2.5px,
     ),
     "h2": (
-      "font-size": 32,
+      "font-size": 36,
       "line-height": 117%,
       "letter-spacing": -1.8px,
     ),
     "h3": (
-      "font-size": 24,
+      "font-size": 32,
       "line-height": 114%,
       "letter-spacing": -1.5px,
     ),
     "h4": (
-      "font-size": 18,
+      "font-size": 20,
+      "line-height": 150%,
+      "letter-spacing": -0.75px,
     ),
     "h5": (
       "font-size": 17,
@@ -188,7 +189,7 @@ $header-styles: (
       "font-size": 50,
     ),
     "h4": (
-      "font-size": 25,
+      "font-size": 24,
     ),
     "h5": (
       "font-size": 20,
