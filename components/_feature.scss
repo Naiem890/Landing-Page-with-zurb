@@ -1,0 +1,60 @@
+.feature {
+  margin: rem-calc(100) 0;
+  text-align: center;
+  gap: rem-calc(80);
+
+  .feature-container {
+    gap: rem-calc(50);
+
+    .feature-content {
+      .feature-description {
+        margin: rem-calc(20) auto;
+        width: 90%;
+        font-size: rem-calc(20);
+      }
+      .learn-link {
+        font-size: rem-calc(20);
+        font-weight: bold;
+        color: $secondary-color;
+      }
+    }
+    .feature-img img {
+      // margin-top: rem-calc(46);
+      // margin-bottom: rem-calc(46);
+      width: 75%;
+    }
+  }
+}
+
+@include breakpoint(medium only) {
+  .feature .feature-container {
+    .feature-content .feature-description {
+      width: 75%;
+    }
+    .feature-img {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+@include breakpoint(large) {
+  .feature {
+    .feature-container {
+      gap: 0;
+      .feature-content {
+        text-align: left;
+        .feature-description {
+          margin: rem-calc(20) 0;
+        }
+      }
+    }
+    .feature-2 {
+      .feature-container {
+        order: 1;
+      }
+      .feature-img {
+        order: 2;
+      }
+    }
+  }
+}
