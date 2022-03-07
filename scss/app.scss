@@ -58,11 +58,17 @@
 // @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
-@include foundation-prototype-classes;
+// @include foundation-prototype-classes;
 
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Custom CSS
-@import "custom";
+// Custom SCSS
+@import "components/base";
+@import "components/header";
+@import "components/hero";
+@import "components/company";
+@import "components/feature";
+@import "components/points";
+@import "components/pricing";

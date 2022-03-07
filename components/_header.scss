@@ -1,0 +1,48 @@
+.off-canvas {
+  .vertical {
+    background-color: $primary-color;
+    color: $white;
+    font-size: rem-calc(18);
+    .links {
+      // background-color: red;
+      border-bottom: rem-calc(1) solid $light-gray;
+      a {
+        padding: rem-calc(20);
+        color: $white;
+      }
+    }
+    .links:first-child {
+      background-color: $dark-gray;
+      font-weight: bold;
+      padding: rem-calc(10);
+    }
+    .button {
+      background-color: $white;
+      color: $primary-color;
+    }
+  }
+}
+.off-canvas-content {
+  nav {
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    transition: $button-transition;
+  }
+  .links {
+    font-weight: bold;
+    font-size: rem-calc(15);
+  }
+  .links.current a,
+  .links a:hover {
+    color: $black;
+  }
+  .current::after {
+    content: "";
+    display: block;
+    height: rem-calc(3);
+    width: 60%;
+    margin: 0 auto;
+    background-color: get-color(secondary);
+  }
+}

@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+i {
+  font-size: 24px;
+}
+.button {
+  margin: 0;
+}
+.font-bold {
+  font-weight: bold;
+}
+.text-black {
+  color: $black;
+}
+.text-grey {
+  color: $dark-gray;
+}
+.border {
+  border: rem-calc(1) solid $medium-gray;
+}
+.round {
+  border-radius: 50%;
+}
+.border-bottom {
+  border-bottom: rem-calc(1) solid $medium-gray;
+}

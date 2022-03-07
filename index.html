@@ -35,27 +35,26 @@
     <!-- OFF CANVAS WRAPPER -->
     <div class="off-canvas-wrapper">
       <!-- OFF-CANVAS -->
-
       <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
         <!-- Close button -->
-        <button
+        <!-- <button
           class="close-button"
           aria-label="Close menu"
           type="button"
           data-close
         >
           <span aria-hidden="true">&times;</span>
-        </button>
+        </button> -->
 
         <!--  OFF-CANVAS  Menu -->
         <ul class="vertical menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li>
-            <button class="margin-0">Log in</button>
-            <button class="button margin-0">Sign up</button>
+          <li class="text-center text-uppercase links">Menu</li>
+          <li class="links"><a href="#">Home</a></li>
+          <li class="links"><a href="#">Feature</a></li>
+          <li class="links"><a href="#">Pricing</a></li>
+          <li class="links"><a href="#">Blogs</a></li>
+          <li class="flex-container align-center margin-top-1">
+            <!-- <button class="button">Get Started</button> -->
           </li>
         </ul>
       </div>
@@ -65,25 +64,22 @@
 
         <!-- NAVBAR -->
 
-        <nav
-          class="flex-container align-justify align-middle margin-vertical-2 grid-container"
-        >
+        <nav class="flex-container align-justify align-middle grid-container">
           <div class="logo">
             <a href="#"><img src="img/logo.svg" alt="" /></a>
           </div>
           <div class="show-for-medium">
             <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Feature</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Blogs</a></li>
+              <li class="links current"><a href="#">Home</a></li>
+              <li class="links"><a href="#">Feature</a></li>
+              <li class="links"><a href="#">Pricing</a></li>
+              <li class="links"><a href="#">Blogs</a></li>
             </ul>
           </div>
           <div class="flex-container show-for-medium">
-            <button class="margin-0">Log in</button>
-            <button class="button margin-0">Sign up</button>
+            <button class="button margin-0">Get Started</button>
           </div>
-          <button class="padding-1 hide-for-medium" data-toggle="offCanvas">
+          <button class="hide-for-medium" data-toggle="offCanvas">
             <i class="fa-solid fa-bars"></i>
           </button>
         </nav>
@@ -94,31 +90,37 @@
           <!-- HERO SECTION -->
 
           <section
-            class="grid-x align-middle hero overflow-visible grid-margin-x large-text-left text-center"
+            class="grid-x align-middle hero overflow-visible grid-margin-x text-center"
           >
-            <div class="large-6 cell hero-content order-2">
+            <div class="large-6 cell hero-content">
               <h1 class="margin-bottom-3">Grow your subscription business</h1>
-              <p class="margin-bottom-3 large-width-75">
+              <p class="hero-description">
                 Outcome-centered products that reduce churn, optimize pricing,
                 and grow your subscription business end-to-end.
               </p>
-              <div class="flex-container">
+              <div class="flex-container hero-button align-center">
                 <a href="" class="button secondary display-block"
                   >Get Started</a
                 >
-                <div class="callout">
-                  <i class="fa-solid fa-arrow-down"></i>
+                <div
+                  class="border round icon flex-container align-center align-middle"
+                >
+                  <a href="#priceSection"
+                    ><i class="fa-solid fa-arrow-down"></i
+                  ></a>
                 </div>
               </div>
             </div>
-            <div class="large-6 cell hero-img order-1">
+            <div class="large-6 cell hero-img">
               <img src="img/Hero 3D.png" alt="" />
             </div>
           </section>
 
           <!-- COMPANY LOGO -->
 
-          <div class="grid-x grid-margin-x align-justify margin-vertical-3">
+          <div
+            class="grid-x company grid-margin-x align-justify margin-vertical-3"
+          >
             <div class="">
               <img src="img/company-logo-1.svg" alt="company-logo" />
             </div>
@@ -199,7 +201,7 @@
 
           <!-- PRICING SECTION -->
 
-          <section class="margin-vertical-3">
+          <section id="priceSection" class="margin-vertical-3">
             <div class="grid-x grid-margin-x align-justify align-middle">
               <div class="cell medium-8">
                 <h2>Get the right plan for future product</h2>

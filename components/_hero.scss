@@ -1,0 +1,46 @@
+.grid-container {
+  margin: 0 auto;
+  .hero {
+    gap: rem-calc(52);
+
+    text-align: center;
+    .hero-content {
+      // text-align: center;
+      //   order: 2;
+      .hero-description {
+        margin: rem-calc(30) auto;
+        width: 75%;
+      }
+      .hero-button {
+        gap: 20px;
+        .icon {
+          width: 52px;
+          height: 52px;
+        }
+      }
+    }
+    .hero-img {
+      //   order: 1;
+    }
+  }
+}
+.grid-container {
+  @include breakpoint(large) {
+    .hero {
+      text-align: left;
+      gap: 0;
+      .hero-content {
+        order: 1;
+        .hero-description {
+          margin: rem-calc(30) 0;
+        }
+        .hero-button {
+          justify-content: start;
+        }
+      }
+      .hero-img {
+        order: 2;
+      }
+    }
+  }
+}
