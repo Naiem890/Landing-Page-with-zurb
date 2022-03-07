@@ -32,7 +32,7 @@
     </div>
  -->
 
-    <!-- NAV BAR -->
+    <!-- OFF-CANVAS -->
 
     <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
       <!-- Close button -->
@@ -45,7 +45,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
 
-      <!-- Menu -->
+      <!--  OFF-CANVAS  Menu -->
       <ul class="vertical menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Feature</a></li>
@@ -55,11 +55,15 @@
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <div
+      <!-- Your page content lives here -->
+
+      <!-- NAVBAR -->
+
+      <nav
         class="flex-container align-justify align-middle margin-vertical-2 grid-container"
       >
         <div class="logo">
-          <img src="img/logo.svg" alt="" />
+          <a href="#"><img src="img/logo.svg" alt="" /></a>
         </div>
         <div class="show-for-medium">
           <ul class="menu">
@@ -76,8 +80,10 @@
         <button class="padding-1 hide-for-medium" data-toggle="offCanvas">
           <i class="fa-solid fa-bars"></i>
         </button>
-      </div>
-      <!-- Your page content lives here -->
+      </nav>
+
+      <!-- MAIN CONTENT OF WEBSITW -->
+
       <div class="grid-container">
         <!-- HERO SECTION -->
 
@@ -103,6 +109,7 @@
         </section>
 
         <!-- COMPANY LOGO -->
+
         <div class="grid-x grid-margin-x align-justify margin-vertical-3">
           <div class="">
             <img src="img/company-logo-1.svg" alt="company-logo" />
@@ -120,7 +127,9 @@
             <img src="img/company-logo-5.svg" alt="company-logo" />
           </div>
         </div>
+
         <!-- FEATURE SECTION -->
+
         <section class="margin-vertical-3">
           <div
             class="grid-x grid-margin-x align-middle align-justify margin-vertical-3"
@@ -151,7 +160,9 @@
             </div>
           </div>
         </section>
+
         <!-- POINTS SECTION -->
+
         <section class="grid-x grid-margin-x margin-vertical-3">
           <div class="medium-4 cell text-center">
             <img src="img/icon-1.png" alt="icon" />
@@ -179,6 +190,7 @@
         </section>
 
         <!-- PRICING SECTION -->
+
         <section class="margin-vertical-3">
           <div class="grid-x grid-margin-x align-justify align-middle">
             <div class="cell medium-8">
@@ -232,6 +244,8 @@
         </section>
       </div>
     </div>
+
+    <!-- ZURB SCRIPTS -->
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
