@@ -1,0 +1,15 @@
+.company {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: rem-calc(32);
+  margin: rem-calc(80) 0;
+  .company-logo {
+    padding: rem-calc(5) 0;
+  }
+}
+
+@include breakpoint(large) {
+  .company {
+    justify-content: space-between;
+  }
+}
