@@ -9,6 +9,10 @@
       font-size: rem-calc(20);
       margin: rem-calc(30) auto;
       width: 90%;
+      @include breakpoint(large) {
+        width: 75%;
+        margin: rem-calc(30) 0;
+      }
     }
     .hero-button {
       gap: 24px;
@@ -16,29 +20,21 @@
         width: 52px;
         height: 52px;
       }
-    }
-  }
-  .hero-img {
-    //   order: 1;
-  }
-}
-
-@include breakpoint(large) {
-  .hero {
-    text-align: left;
-    gap: 0;
-    .hero-content {
-      order: 1;
-      .hero-description {
-        width: 75%;
-        margin: rem-calc(30) 0;
-      }
-      .hero-button {
+      @include breakpoint(large) {
         justify-content: start;
       }
     }
-    .hero-img {
+    @include breakpoint(large) {
+      order: 1;
+    }
+  }
+  .hero-img {
+    @include breakpoint(large) {
       order: 2;
     }
+  }
+  @include breakpoint(large) {
+    text-align: left;
+    gap: 0;
   }
 }

@@ -50,10 +50,10 @@
         <ul class="vertical menu">
           <li class="text-center text-uppercase links">Menu</li>
           <li class="links"><a href="#">Home</a></li>
-          <li class="links"><a href="#">Feature</a></li>
-          <li class="links"><a href="#">Pricing</a></li>
+          <li class="links"><a href="#featureSection">Feature</a></li>
+          <li class="links"><a href="#priceSection">Pricing</a></li>
           <li class="links"><a href="#">Blogs</a></li>
-          <li class="flex-container align-center margin-top-1">
+          <li class="flex-container align-center">
             <!-- <button class="button">Get Started</button> -->
           </li>
         </ul>
@@ -71,13 +71,13 @@
           <div class="show-for-medium">
             <ul class="menu">
               <li class="links current"><a href="#">Home</a></li>
-              <li class="links"><a href="#">Feature</a></li>
-              <li class="links"><a href="#">Pricing</a></li>
+              <li class="links"><a href="#featureSection">Feature</a></li>
+              <li class="links"><a href="#priceSection">Pricing</a></li>
               <li class="links"><a href="#">Blogs</a></li>
             </ul>
           </div>
           <div class="flex-container show-for-medium">
-            <button class="button margin-0">Get Started</button>
+            <button class="button">Get Started</button>
           </div>
           <button class="hide-for-medium" data-toggle="offCanvas">
             <i class="fa-solid fa-bars"></i>
@@ -93,7 +93,7 @@
             class="grid-x align-middle hero overflow-visible grid-margin-x text-center"
           >
             <div class="large-6 cell hero-content">
-              <h1 class="margin-bottom-3">Grow your subscription business</h1>
+              <h1>Grow your subscription business</h1>
               <p class="hero-description">
                 Outcome-centered products that reduce churn, optimize pricing,
                 and grow your subscription business end-to-end.
@@ -118,9 +118,7 @@
 
           <!-- COMPANY LOGO -->
 
-          <section
-            class="flex-container company align-justify margin-vertical-3"
-          >
+          <section class="flex-container company align-justify">
             <div class="company-logo">
               <img src="img/company-logo-1.svg" alt="company-logo" />
             </div>
@@ -140,7 +138,10 @@
 
           <!-- FEATURE SECTION -->
 
-          <section class="feature flex-container flex-dir-column">
+          <section
+            id="featureSection"
+            class="feature flex-container flex-dir-column"
+          >
             <div
               class="grid-x grid-margin-x feature-container feature-1 align-middle align-justify"
             >
@@ -175,7 +176,7 @@
 
           <!-- POINTS SECTION -->
 
-          <section class="grid-x points grid-margin-x margin-vertical-3">
+          <section class="grid-x points grid-margin-x">
             <div class="medium-4 cell text-center">
               <img src="img/icon-1.png" alt="icon" />
               <h4>Benchmarks</h4>
