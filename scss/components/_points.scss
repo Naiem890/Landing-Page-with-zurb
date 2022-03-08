@@ -1,7 +1,6 @@
 .points {
   margin: rem-calc(120) 0;
   gap: rem-calc(52);
-
   @include breakpoint(500px) {
     gap: rem-calc(52);
   }
