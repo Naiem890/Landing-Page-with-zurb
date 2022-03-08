@@ -54,6 +54,10 @@ $gutter: map-get($grid-margin-gutters, "medium");
         width: 100%;
         background-color: $white;
         color: get-color(secondary);
+        &:hover {
+          background-color: get-color(secondary);
+          color: $white;
+        }
       }
     }
 
@@ -69,6 +73,10 @@ $gutter: map-get($grid-margin-gutters, "medium");
       .button {
         background-color: darken(desaturate($primary-color, 27.17), 27.06);
         color: $white;
+        &:hover {
+          background-color: $white;
+          color: $primary-color;
+        }
       }
     }
 
